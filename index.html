@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Healthcare Practice Management System">
+
+    <title>HealthHub - Practice Management</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Top Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="navbar-container">
+
+            <div class="navbar-brand">
+
+                <i class="fas fa-heartbeat"></i>
+
+                <span class="brand-name">HealthHub</span>
+
+            </div>
+
+ 
+
+            <div class="navbar-search">
+
+                <i class="fas fa-search"></i>
+
+                <input type="text" placeholder="Search clients, appointments..." class="search-input">
+
+            </div>
+
+ 
+
+            <div class="navbar-actions">
+
+                <button class="nav-btn" title="Notifications">
+
+                    <i class="fas fa-bell"></i>
+
+                    <span class="badge">5</span>
+
+                </button>
+
+                <button class="nav-btn" title="Messages">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <span class="badge">12</span>
+
+                </button>
+
+                <div class="user-menu">
+
+                    <img src="https://ui-avatars.com/api/?name=Dr+Smith&background=4A90E2&color=fff" alt="User" class="user-avatar">
+
+                    <span class="user-name">Dr. Smith</span>
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+ 
+
+    <div class="main-container">
+
+        <!-- Sidebar Navigation -->
+
+        <aside class="sidebar">
+
+            <ul class="sidebar-menu">
+
+                <li class="menu-item active">
+
+                    <a href="#dashboard">
+
+                        <i class="fas fa-th-large"></i>
+
+                        <span>Dashboard</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#calendar">
+
+                        <i class="fas fa-calendar-alt"></i>
+
+                        <span>Calendar</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#clients">
+
+                        <i class="fas fa-users"></i>
+
+                        <span>Clients</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#appointments">
+
+                        <i class="fas fa-clock"></i>
+
+                        <span>Appointments</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#messaging">
+
+                        <i class="fas fa-comments"></i>
+
+                        <span>Messaging</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#documents">
+
+                        <i class="fas fa-folder-open"></i>
+
+                        <span>Documents</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#billing">
+
+                        <i class="fas fa-file-invoice-dollar"></i>
+
+                        <span>Billing</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#reports">
+
+                        <i class="fas fa-chart-bar"></i>
+
+                        <span>Reports</span>
+
+                    </a>
+
+                </li>
+
+                <li class="menu-item">
+
+                    <a href="#settings">
+
+                        <i class="fas fa-cog"></i>
+
+                        <span>Settings</span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+ 
+
+            <div class="sidebar-footer">
+
+                <button class="btn btn-primary btn-block">
+
+                    <i class="fas fa-plus"></i> New Appointment
+
+                </button>
+
+            </div>
+
+        </aside>
+
+ 
+
+        <!-- Main Content Area -->
+
+        <main class="content">
+
+            <!-- Dashboard Section -->
+
+            <section id="dashboard" class="content-section active">
+
+                <div class="page-header">
+
+                    <h1>Dashboard</h1>
+
+                    <p class="page-subtitle">Welcome back, Dr. Smith</p>
+
+                </div>
+
+ 
+
+                <!-- Quick Stats -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon stat-icon-blue">
+
+                            <i class="fas fa-calendar-check"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h3>8</h3>
+
+                            <p>Today's Appointments</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon stat-icon-green">
+
+                            <i class="fas fa-users"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h3>124</h3>
+
+                            <p>Active Clients</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon stat-icon-orange">
+
+                            <i class="fas fa-envelope"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h3>12</h3>
+
+                            <p>Unread Messages</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon stat-icon-purple">
+
+                            <i class="fas fa-dollar-sign"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h3>$4,250</h3>
+
+                            <p>This Week Revenue</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+ 
+
+                <!-- Today's Schedule -->
+
+                <div class="dashboard-grid">
+
+                    <div class="card">
+
+                        <div class="card-header">
+
+                            <h2>Today's Schedule</h2>
+
+                            <button class="btn btn-sm btn-outline">View All</button>
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="appointment-list">
+
+                                <div class="appointment-item">
+
+                                    <div class="appointment-time">
+
+                                        <strong>9:00 AM</strong>
+
+                                        <span>45 min</span>
+
+                                    </div>
+
+                                    <div class="appointment-details">
+
+                                        <h4>Sarah Johnson</h4>
+
+                                        <p>Initial Consultation</p>
+
+                                    </div>
+
+                                    <div class="appointment-actions">
+
+                                        <button class="btn btn-sm btn-success">
+
+                                            <i class="fas fa-video"></i> Join
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="appointment-item">
+
+                                    <div class="appointment-time">
+
+                                        <strong>10:30 AM</strong>
+
+                                        <span>60 min</span>
+
+                                    </div>
+
+                                    <div class="appointment-details">
+
+                                        <h4>Michael Chen</h4>
+
+                                        <p>Follow-up Session</p>
+
+                                    </div>
+
+                                    <div class="appointment-actions">
+
+                                        <button class="btn btn-sm btn-outline">View</button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="appointment-item">
+
+                                    <div class="appointment-time">
+
+                                        <strong>2:00 PM</strong>
+
+                                        <span>45 min</span>
+
+                                    </div>
+
+                                    <div class="appointment-details">
+
+                                        <h4>Emily Rodriguez</h4>
+
+                                        <p>Therapy Session</p>
+
+                                    </div>
+
+                                    <div class="appointment-actions">
+
+                                        <button class="btn btn-sm btn-outline">View</button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="appointment-item">
+
+                                    <div class="appointment-time">
+
+                                        <strong>3:30 PM</strong>
+
+                                        <span>60 min</span>
+
+                                    </div>
+
+                                    <div class="appointment-details">
+
+                                        <h4>David Miller</h4>
+
+                                        <p>Initial Assessment</p>
+
+                                    </div>
+
+                                    <div class="appointment-actions">
+
+                                        <button class="btn btn-sm btn-outline">View</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+ 
+
+                    <div class="sidebar-widgets">
+
+                        <!-- Quick Actions -->
+
+                        <div class="card">
+
+                            <div class="card-header">
+
+                                <h3>Quick Actions</h3>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="quick-actions">
+
+                                    <button class="action-btn">
+
+                                        <i class="fas fa-user-plus"></i>
+
+                                        <span>Add Client</span>
+
+                                    </button>
+
+                                    <button class="action-btn">
+
+                                        <i class="fas fa-calendar-plus"></i>
+
+                                        <span>Schedule</span>
+
+                                    </button>
+
+                                    <button class="action-btn">
+
+                                        <i class="fas fa-file-medical"></i>
+
+                                        <span>New Note</span>
+
+                                    </button>
+
+                                    <button class="action-btn">
+
+                                        <i class="fas fa-file-invoice"></i>
+
+                                        <span>Invoice</span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+ 
+
+                        <!-- Recent Activity -->
+
+                        <div class="card">
+
+                            <div class="card-header">
+
+                                <h3>Recent Activity</h3>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="activity-list">
+
+                                    <div class="activity-item">
+
+                                        <div class="activity-icon activity-icon-blue">
+
+                                            <i class="fas fa-calendar"></i>
+
+                                        </div>
+
+                                        <div class="activity-content">
+
+                                            <p><strong>New appointment</strong> booked</p>
+
+                                            <span class="activity-time">10 minutes ago</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="activity-item">
+
+                                        <div class="activity-icon activity-icon-green">
+
+                                            <i class="fas fa-check"></i>
+
+                                        </div>
+
+                                        <div class="activity-content">
+
+                                            <p><strong>Payment received</strong> from Sarah J.</p>
+
+                                            <span class="activity-time">1 hour ago</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="activity-item">
+
+                                        <div class="activity-icon activity-icon-orange">
+
+                                            <i class="fas fa-envelope"></i>
+
+                                        </div>
+
+                                        <div class="activity-content">
+
+                                            <p><strong>New message</strong> from Michael C.</p>
+
+                                            <span class="activity-time">2 hours ago</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+ 
+
+                        <!-- Reminders -->
+
+                        <div class="card">
+
+                            <div class="card-header">
+
+                                <h3>Reminders</h3>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="reminder-list">
+
+                                    <div class="reminder-item">
+
+                                        <input type="checkbox" id="reminder1">
+
+                                        <label for="reminder1">Complete progress notes for today</label>
+
+                                    </div>
+
+                                    <div class="reminder-item">
+
+                                        <input type="checkbox" id="reminder2">
+
+                                        <label for="reminder2">Review and sign 3 documents</label>
+
+                                    </div>
+
+                                    <div class="reminder-item">
+
+                                        <input type="checkbox" id="reminder3">
+
+                                        <label for="reminder3">Follow up with insurance claims</label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+ 
+
+            <!-- Calendar Section -->
+
+            <section id="calendar" class="content-section">
+
+                <div class="page-header">
+
+                    <h1>Calendar</h1>
+
+                    <div class="page-actions">
+
+                        <button class="btn btn-outline">
+
+                            <i class="fas fa-filter"></i> Filter
+
+                        </button>
+
+                        <button class="btn btn-primary">
+
+                            <i class="fas fa-plus"></i> New Appointment
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+ 
+
+                <div class="calendar-container">
+
+                    <div class="calendar-header">
+
+                        <button class="btn btn-sm btn-outline">
+
+                            <i class="fas fa-chevron-left"></i>
+
+                        </button>
+
+                        <h2>November 2025</h2>
+
+                        <button class="btn btn-sm btn-outline">
+
+                            <i class="fas fa-chevron-right"></i>
+
+                        </button>
+
+                        <div class="calendar-view-toggle">
+
+                            <button class="btn btn-sm active">Week</button>
+
+                            <button class="btn btn-sm">Month</button>
+
+                            <button class="btn btn-sm">Day</button>
+
+                        </div>
+
+                    </div>
+
+ 
+
+                    <div class="calendar-grid">
+
+                        <div class="calendar-time-column">
+
+                            <div class="time-slot">8:00 AM</div>
+
+                            <div class="time-slot">9:00 AM</div>
+
+                            <div class="time-slot">10:00 AM</div>
+
+                            <div class="time-slot">11:00 AM</div>
+
+                            <div class="time-slot">12:00 PM</div>
+
+                            <div class="time-slot">1:00 PM</div>
+
+                            <div class="time-slot">2:00 PM</div>
+
+                            <div class="time-slot">3:00 PM</div>
+
+                            <div class="time-slot">4:00 PM</div>
+
+                            <div class="time-slot">5:00 PM</div>
+
+                        </div>
+
+                        <div class="calendar-days">
+
+                            <div class="calendar-day">
+
+                                <div class="day-header">Mon 11/11</div>
+
+                                <div class="day-slots">
+
+                                    <div class="calendar-event" style="top: 60px; height: 90px;">
+
+                                        <strong>9:00 AM</strong>
+
+                                        <p>Sarah Johnson</p>
+
+                                    </div>
+
+                                    <div class="calendar-event" style="top: 180px; height: 120px;">
+
+                                        <strong>10:30 AM</strong>
+
+                                        <p>Michael Chen</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="calendar-day">
+
+                                <div class="day-header">Tue 11/12</div>
+
+                                <div class="day-slots"></div>
+
+                            </div>
+
+                            <div class="calendar-day">
+
+                                <div class="day-header">Wed 11/13</div>
+
+                                <div class="day-slots"></div>
+
+                            </div>
+
+                            <div class="calendar-day">
+
+                                <div class="day-header">Thu 11/14</div>
+
+                                <div class="day-slots"></div>
+
+                            </div>
+
+                            <div class="calendar-day">
+
+                                <div class="day-header">Fri 11/15</div>
+
+                                <div class="day-slots"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+ 
+
+            <!-- Clients Section -->
+
+            <section id="clients" class="content-section">
+
+                <div class="page-header">
+
+                    <h1>Clients</h1>
+
+                    <div class="page-actions">
+
+                        <div class="search-box">
+
+                            <i class="fas fa-search"></i>
+
+                            <input type="text" placeholder="Search clients...">
+
+                        </div>
+
+                        <button class="btn btn-primary">
+
+                            <i class="fas fa-user-plus"></i> Add Client
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+ 
+
+                <div class="clients-filters">
+
+                    <button class="filter-btn active">All Clients (124)</button>
+
+                    <button class="filter-btn">Active (98)</button>
+
+                    <button class="filter-btn">Inactive (26)</button>
+
+                    <button class="filter-btn">New This Month (12)</button>
+
+                </div>
+
+ 
+
+                <div class="table-container">
+
+                    <table class="data-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Name</th>
+
+                                <th>Email</th>
+
+                                <th>Phone</th>
+
+                                <th>Last Appointment</th>
+
+                                <th>Next Appointment</th>
+
+                                <th>Status</th>
+
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="client-name">
+
+                                        <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=E3F2FD&color=1976D2" alt="Sarah Johnson">
+
+                                        <span>Sarah Johnson</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>sarah.j@email.com</td>
+
+                                <td>(555) 123-4567</td>
+
+                                <td>Nov 5, 2025</td>
+
+                                <td>Nov 11, 2025 9:00 AM</td>
+
+                                <td><span class="badge badge-success">Active</span></td>
+
+                                <td>
+
+                                    <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+
+                                    <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+
+                                    <button class="btn-icon" title="Message"><i class="fas fa-envelope"></i></button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="client-name">
+
+                                        <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=F3E5F5&color=7B1FA2" alt="Michael Chen">
+
+                                        <span>Michael Chen</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>m.chen@email.com</td>
+
+                                <td>(555) 234-5678</td>
+
+                                <td>Nov 4, 2025</td>
+
+                                <td>Nov 11, 2025 10:30 AM</td>
+
+                                <td><span class="badge badge-success">Active</span></td>
+
+                                <td>
+
+                                    <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+
+                                    <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+
+                                    <button class="btn-icon" title="Message"><i class="fas fa-envelope"></i></button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="client-name">
+
+                                        <img src="https://ui-avatars.com/api/?name=Emily+Rodriguez&background=FFF3E0&color=E65100" alt="Emily Rodriguez">
+
+                                        <span>Emily Rodriguez</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>emily.r@email.com</td>
+
+                                <td>(555) 345-6789</td>
+
+                                <td>Oct 28, 2025</td>
+
+                                <td>Nov 11, 2025 2:00 PM</td>
+
+                                <td><span class="badge badge-success">Active</span></td>
+
+                                <td>
+
+                                    <button class="btn-icon" title="View"><i class="fas fa-eye"></i></button>
+
+                                    <button class="btn-icon" title="Edit"><i class="fas fa-edit"></i></button>
+
+                                    <button class="btn-icon" title="Message"><i class="fas fa-envelope"></i></button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+ 
+
+            <!-- Messaging Section -->
+
+            <section id="messaging" class="content-section">
+
+                <div class="page-header">
+
+                    <h1>Messaging</h1>
+
+                    <button class="btn btn-primary">
+
+                        <i class="fas fa-plus"></i> New Message
+
+                    </button>
+
+                </div>
+
+ 
+
+                <div class="messaging-container">
+
+                    <div class="message-list">
+
+                        <div class="message-search">
+
+                            <i class="fas fa-search"></i>
+
+                            <input type="text" placeholder="Search messages...">
+
+                        </div>
+
+                        <div class="message-thread active">
+
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=E3F2FD&color=1976D2" alt="Sarah Johnson">
+
+                            <div class="thread-content">
+
+                                <h4>Sarah Johnson</h4>
+
+                                <p>Thank you for the session today...</p>
+
+                            </div>
+
+                            <div class="thread-meta">
+
+                                <span class="time">10m</span>
+
+                                <span class="unread-badge">2</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="message-thread">
+
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=F3E5F5&color=7B1FA2" alt="Michael Chen">
+
+                            <div class="thread-content">
+
+                                <h4>Michael Chen</h4>
+
+                                <p>Can we reschedule next week?</p>
+
+                            </div>
+
+                            <div class="thread-meta">
+
+                                <span class="time">1h</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="message-thread">
+
+                            <img src="https://ui-avatars.com/api/?name=Emily+Rodriguez&background=FFF3E0&color=E65100" alt="Emily Rodriguez">
+
+                            <div class="thread-content">
+
+                                <h4>Emily Rodriguez</h4>
+
+                                <p>I have a question about...</p>
+
+                            </div>
+
+                            <div class="thread-meta">
+
+                                <span class="time">2h</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+ 
+
+                    <div class="message-conversation">
+
+                        <div class="conversation-header">
+
+                            <div class="conversation-user">
+
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=E3F2FD&color=1976D2" alt="Sarah Johnson">
+
+                                <div>
+
+                                    <h3>Sarah Johnson</h3>
+
+                                    <span class="status-indicator">Active now</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="conversation-actions">
+
+                                <button class="btn-icon"><i class="fas fa-phone"></i></button>
+
+                                <button class="btn-icon"><i class="fas fa-video"></i></button>
+
+                                <button class="btn-icon"><i class="fas fa-ellipsis-v"></i></button>
+
+                            </div>
+
+                        </div>
+
+ 
+
+                        <div class="conversation-messages">
+
+                            <div class="message received">
+
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=E3F2FD&color=1976D2" alt="Sarah Johnson">
+
+                                <div class="message-bubble">
+
+                                    <p>Hi Dr. Smith, thank you for today's session. I really appreciated your insights.</p>
+
+                                    <span class="message-time">10:45 AM</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="message received">
+
+                                <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=E3F2FD&color=1976D2" alt="Sarah Johnson">
+
+                                <div class="message-bubble">
+
+                                    <p>I've been practicing the techniques we discussed and they're really helping.</p>
+
+                                    <span class="message-time">10:46 AM</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="message sent">
+
+                                <div class="message-bubble">
+
+                                    <p>That's wonderful to hear, Sarah! Keep up the great work. Remember to keep your daily journal as we discussed.</p>
+
+                                    <span class="message-time">10:50 AM</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+ 
+
+                        <div class="conversation-input">
+
+                            <button class="btn-icon"><i class="fas fa-paperclip"></i></button>
+
+                            <input type="text" placeholder="Type a message...">
+
+                            <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+ 
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+ 
